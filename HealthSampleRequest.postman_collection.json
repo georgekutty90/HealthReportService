@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "069d68fb-3966-44d6-adf4-557d32b6e22e",
+		"name": "HealthSampleRequest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5000/api/Health/PostMyHealth",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"disabled": false
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer YklCTGc3ZWg2NjFZRExPOHIrbWJtZnNzSlJoYXFxejU1SW52dGJFbzJ3dz06YWxpQGNhc2stbWFycXVlLmNvLnVrOjYzNjY5ODY3MzYyNTQ2NjUzMg==",
+						"disabled": true
+					},
+					{
+						"key": "UserAPIKey",
+						"value": "8b29851d7f47c9f454240118cab737bb46e7b78f",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"Token\": 1,\r\n  \"RegistrationCode\": \"X345-236-8919640628\",\r\n  \"Title\": \"Busfinder Health Report\",\r\n  \"Version\": \"1053\",\r\n  \"Errors\": [\r\n    {\r\n      \"Source\": \"Power\",\r\n      \"Message\": \"Low power warning\"\r\n    },\r\n    {\r\n      \"Source\": \"Communications\",\r\n      \"Message\": \"Network disconnected twice\"\r\n    }\r\n  ],\r\n  \"ButtonPresses\": 6,\r\n  \"Battery01VoltAvg\": 5,\r\n  \"Battery02VoltAvg\": 4,\r\n  \"ChargeCurrentAvg\": 3,\r\n  \"SunlightAvg\": 2,\r\n  \"CellBarAvg\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/Health/PostMyHealth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Health",
+						"PostMyHealth"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
